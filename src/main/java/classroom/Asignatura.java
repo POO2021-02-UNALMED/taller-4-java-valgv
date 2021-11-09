@@ -2,21 +2,20 @@ package classroom;
 
 public class Asignatura {
 
-    String nombre;
+	String nombre;
     String n = nombre;
     int codigoInterno;
     int codigoExterno;
 
     Asignatura() {
-        this("Sin nombre");
-        this(0);
+        this("Sin nombre", 0, 0); //Se quitó el this(0); y se agregaron los otros parámetros después de "Sin nommbre"
     }
 
-    Asignatura(int codigoInterno) {
+    /*Asignatura(int codigoInterno) {
         this("Sin nombre", codigoInterno, 0);
-    }
+    }*/
 
-    Asignatura(int codigoExterno) {
+   Asignatura(int codigoExterno) {
         this("Sin nombre", 0, codigoExterno);
     }
 
@@ -36,9 +35,9 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
+    /*void cambiarDatos(int codigoInterno) {
         this.codigoInterno = codigoInterno;
-    }
+    }*/
 
     void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;
@@ -55,4 +54,5 @@ public class Asignatura {
     public void setCodigoInterno(double codigoInterno) {
         this.codigoInterno = (int) codigoInterno;
     }
+
 }
